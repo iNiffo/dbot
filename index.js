@@ -33,9 +33,7 @@ if(command ===`${prefix}rogue`){
     return message.channel.send("Use code Fakka for 10% off your next rogue energy purchase you fucking pepega https://www.rogueenergy.com/?rfsn=4654754.8d8456&utm_source=refersion&utm_medium=affiliate&utm_campaign=4654754.8d8456");
 }
 
-if(command ===`${prefix}zebi`){
-    return message.channel.send("Je kanker moeder");
-}
+
 
 if(command === `${prefix}help`){
 
@@ -71,4 +69,4 @@ return message.channel.send(botEmbed);
 
 
 
-client.login(process.env.token);
+client.login("token");
