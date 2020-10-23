@@ -40,7 +40,7 @@ var botEmbed  = new discord.MessageEmbed()
 .setTitle("Help")
 .setDescription(".socials")
 .setColor("#0099ff")
-.addField("bot name", client.user.username)
+.addField("Bot Information", client.user.username)
 .setThumbnail("https://i.imgur.com/wSTFkRM.png")
 .setImage("")
 
