@@ -71,4 +71,4 @@ return message.channel.send(botEmbed);
 
 
 
-client.login(process.env.token);
+client.login("token");
