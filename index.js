@@ -21,12 +21,38 @@ if(message.channel.type == "dm") return;
 
 var prefix =  botConfig.prefix;
 
+var token = botConfig.token.toString; // Doe hier iets mee idk. Ik heb ook alle messages
+                                      // mooier gemaakt.
+
 var messageArray = message.content.split(" ");
 
 var command = messageArray[0];
 
-if(command === `${prefix}social`){
-    return message.channel.send(" https://www.youtube.com/channel/UCsE_8xw20vgI0zO4EPy8E8w " + " https://www.twitch.tv/jxshytv " + " https://www.snapchat.com/add/joshuapaton " + " https://instagram.com/josh__paton?igshid=1gdo044stqyf2 ");         
+if(command === `${prefix}twitch`){
+
+var botEmbedTwitch = new discord.MessageEmbed()
+.setTitle("Twitch")
+.addField("Temz", "https://twitch.tv/temzjk", false)
+.addField("Josh", "https://twitch.tv/JxshyTV", false)
+.addField("Tape", "https://twitch.tv/TapeEU", false)
+.setThumbnail("https://cdn0.iconfinder.com/data/icons/social-network-7/50/16-512.png")
+
+return message.channel.send(botEmbedTwitch);
+
+}
+
+if(command === `${prefix}socials`){
+
+var botEmbedSocials = new discord.MessageEmbed()
+.setTitle("Socials")
+.addField("Josh",
+`Youtube: [click here](https://www.youtube.com/channel/UCsE_8xw20vgI0zO4EPy8E8w)
+Twitch: [click here](https://www.twitch.tv/jxshytv)
+Snapchat: [click here](https://www.snapchat.com/add/joshuapaton)
+Instagram: [click here](https://instagram.com/josh__paton?igshid=1gdo044stqyf2)`, false)
+
+return message.channel.send(botEmbedSocials);
+
 }
 
 if(command ===`${prefix}rogue`){
@@ -40,7 +66,7 @@ if(command ===`${prefix}zebi`){
 if(command === `${prefix}help`){
 
 
-var botEmbed  = new discord.MessageEmbed()
+var botEmbedHelp  = new discord.MessageEmbed()
 .setTitle("Help")
 .setDescription(".socials")
 .setColor("#0099ff")
@@ -48,10 +74,21 @@ var botEmbed  = new discord.MessageEmbed()
 .setThumbnail("https://i.imgur.com/wSTFkRM.png")
 .setImage("")
 
-return message.channel.send(botEmbed);
+return message.channel.send(botEmbedHelp);
 
 }
 
+if(command === `${prefix}help`){
+
+var botEmbedSocials = new discord.MessageEmbed()
+.setTitle("Socials")
+.addField("Temz", "https://twitch.tv/temzjk", false)
+.addField("Josh", "https://twitch.tv/JxshyTV", false)
+.addField("Tape", "https://twitch.tv/TapeEU", false)
+
+return message.channel.send(botEmbedSocials);
+
+}
 })
 
 
@@ -71,4 +108,13 @@ return message.channel.send(botEmbed);
 
 
 
-client.login("token");
+client.login("NzY5MzI4NDI0MjQ1NTI2NTg4.X5Na7Q.7imDCGH3JON7BIPdJ6WKXS9ovQE"); // mijn bot token btw
+                                                                             // je had nooit een
+                                                                             // variable gemaakt
+                                                                             // om hier te zetten
+                                                                             // en zelfs dat werkte
+                                                                             // niet dus veel suc6
+                                                                             // met config. ik heb
+                                                                             // die token ding in
+                                                                             // config gelaten en token
+                                                                             // variable gemaakt.
