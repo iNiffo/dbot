@@ -97,18 +97,6 @@ var botEmbedHelp  = new discord.MessageEmbed()
 return message.channel.send(botEmbedHelp);
 
 }
-
-if(command === `${prefix}help`){
-
-var botEmbedSocials = new discord.MessageEmbed()
-.setTitle("Socials")
-.addField("Temz", "https://twitch.tv/temzjk", false)
-.addField("Josh", "https://twitch.tv/JxshyTV", false)
-.addField("Tape", "https://twitch.tv/TapeEU", false)
-
-return message.channel.send(botEmbedSocials);
-
-}
 })
 
 
@@ -128,7 +116,7 @@ return message.channel.send(botEmbedSocials);
 
 
 
-client.login("NzY5MzI4NDI0MjQ1NTI2NTg4.X5Na7Q.7imDCGH3JON7BIPdJ6WKXS9ovQE"); // mijn bot token btw
+client.login("NzY5MzI4NDI0MjQ1NTI2NTg4.X5Na7Q.tbTIx2ioqTl5dA6gP-DYQHoNNtQ"); // mijn bot token btw
                                                                              // je had nooit een
                                                                              // variable gemaakt
                                                                              // om hier te zetten
